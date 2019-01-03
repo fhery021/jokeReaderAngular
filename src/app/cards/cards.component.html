@@ -1,26 +1,26 @@
 <div>
-    <section class="hero">
-        <div class="hero-body">
-            <div class="container">
-            <h1 class="title">Random Jokes</h1>
-            <div class="is-two-thirds column is-paddingless">
-                <h2 class="subtitle is-4">Get random jokes at each refresh! </h2>
-            </div>
-            </div>
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">Random Jokes</h1>
+        <div class="is-two-thirds column is-paddingless">
+          <h2 class="subtitle is-4">Get random jokes at each refresh! </h2>
         </div>
-    </section>
-      
-      <div className="columns">
-          
-              <div className="column is-one-third" *ngFor="let joke of jokes">
-                  <div className="card">
-                  <div className="card-content">
-                      <p className="title">{{ joke.id }}</p>
-                      <p className="answer">{{ joke.joke }}</p>
-                  </div>
-                  </div>
-              </div>
-          
       </div>
-  
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="columns pd">
+      <div class="column is-one-third" *ngFor="let joke of jokes">
+        <div class="card">
+          <div class="card-content">
+            <p class="title">{{ joke.id }}</p>
+            <p class="answer">{{ joke.joke }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </div>
