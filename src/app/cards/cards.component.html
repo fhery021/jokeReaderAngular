@@ -1,5 +1,5 @@
 <div>
-    <section class="hero background__clouds">
+    <section class="hero">
         <div class="hero-body">
             <div class="container">
             <h1 class="title">Random Jokes</h1>
@@ -10,28 +10,17 @@
         </div>
     </section>
       
-      <div class="columns background__clouds">
-            <div class="column is-one-third" *ngFor="let joke of jokes">
-                <section class="card-container">
-                    <article class="c-card">
-                        
-                        <header class="c-card__header">
-                            <h2 class="c-card__title">{{ joke.id }}</h2>
-                            <p class="c-card__intro">{{ joke.joke }}</p>
-                        </header>
-
-
-                        <!-- <div class="c-card__body">
-                            <img src="http://placehold.it/350x200"  class="c-card__image" alt="Card Image" />                            
-                        </div> -->
-
-                        <footer class="c-card__footer">
-                            Share it!
-                        </footer>
-                    </article>
-                </section>
-            </div>
-        </div>
-
+      <div className="columns">
+          
+              <div className="column is-one-third" *ngFor="let joke of jokes">
+                  <div className="card">
+                  <div className="card-content">
+                      <p className="title">{{ joke.id }}</p>
+                      <p className="answer">{{ joke.joke }}</p>
+                  </div>
+                  </div>
+              </div>
+          
+      </div>
   
 </div>
